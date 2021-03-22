@@ -23,7 +23,7 @@ const changeData = () => {
     if(i === datas.length) i = 0;
 }
   return (
-    <div className="main">
+    <React.Fragment>
      {/* <Circle /> */}
      <br />
      {/* <Curvedline /> */}
@@ -39,7 +39,7 @@ const changeData = () => {
       <button onClick={() =>setData([...data, Math.round(Math.random()*100)])}>Add data</button>
      <br />
      {/* <Force /> */}
-    </div>
+    </React.Fragment>
   );
 }
 
