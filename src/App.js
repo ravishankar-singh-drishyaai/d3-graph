@@ -3,6 +3,8 @@ import Barchart from './Barchart';
 import './App.css';
 import Circle from './Circle';
 import Curvedline from './Curved_Line';
+import Breakingbadgraph from './breaking-bad-graph/Breaking-bad-graph'
+import Racebarchart from './racing-bar-graph/Race_bar_graph';
 // import Force from './Force';
 const datas = [
   [40, 70, 80, 90,60],
@@ -27,7 +29,7 @@ const changeData = () => {
      {/* <Circle /> */}
      <br />
      {/* <Curvedline /> */}
-     <br />
+     {/* <br />
      <button onClick={changeData}>Change Data</button>
      <Barchart data={data}/>
      <button onClick={() => setData(data.map(value => value + 5))}>
@@ -37,7 +39,9 @@ const changeData = () => {
           Filter data
       </button>
       <button onClick={() =>setData([...data, Math.round(Math.random()*100)])}>Add data</button>
-     <br />
+     <br /> */}
+     {/* <Breakingbadgraph /> */}
+     <Racebarchart />
      {/* <Force /> */}
     </React.Fragment>
   );
